@@ -12,7 +12,11 @@
 */
 
 //CODE HERE
+function helloWorld () {
+  console.log('Hello, World!');
+}
 
+helloWorld();
 
 ////////////////// PROBLEM 2 ////////////////////
 
@@ -21,7 +25,8 @@
 */
 
 //CODE HERE
-
+const jsNinja = () => 'I am a JavaScript ninja!';
+console.log(jsNinja());
 
 ////////////////// PROBLEM 3 ////////////////////
 /*
@@ -31,7 +36,11 @@
 */
 
 //CODE HERE
+function printName(name) {
+  console.log(name);
+}
 
+printName('Thai');
 
 ////////////////// PROBLEM 4 ////////////////////
 /*
@@ -45,7 +54,11 @@
 */
 
 //CODE HERE
+function greeting(name) {
+  console.log(`Hello, ${name}`);
+}
 
+greeting('Rob');
 
 ////////////////// PROBLEM 5 ////////////////////
 
@@ -59,6 +72,15 @@
 */
 
 //CODE HERE
+const compareNums = (num1, num2) => {
+  if (num1 > num2) {
+    return num1;
+  } else if (num2 > num1) {
+    return num2;
+  } else {
+    return num1;
+  }
+}
 
 
 ////////////////// PROBLEM 6 ////////////////////
@@ -70,7 +92,13 @@
 */
 
 //CODE HERE
+function add(num1, num2) {
+  let number1 = Number(num1);
+  let number2 = Number(num2);
+  return number1 + number2;
+}
 
+let sum = add(3, '47');
 
 ////////////////// PROBLEM 7 ////////////////////
 
@@ -85,7 +113,7 @@ const exclaim = function(str) {
 
 // arrow
 // declaration
-// expression
+// expression (THIS IS THE CORRECT ANSWER)
 
 
 
@@ -96,11 +124,12 @@ const exclaim = function(str) {
   Uncomment the answer underneath.
 */
 
-const exclaimTwo = str => {
-  return str.toUpperCase() + '!!!'
-}
+const exclaimThree = str => str.toUpperCase() + '!!!';
+exclaimThree('I love to code');
 
-// arrow
+
+
+// arrow (THIS IS THE CORRECT ANSWER)
 // declaration
 // expression
 
@@ -110,7 +139,6 @@ const exclaimTwo = str => {
 
   Brownie points if you use a template string
 */
-
 
 
 ////////////////// PROBLEM 9 ////////////////////
@@ -125,7 +153,7 @@ function exclaimFour(str) {
 }
 
 // arrow
-// declaration
+// declaration (THIS IS THE CORRECT ANSWER)
 // expression
 
 
@@ -139,7 +167,17 @@ function exclaimFour(str) {
 */
 
 //CODE HERE
+function nameCheck(name) {
+  if (name === 'Steven') {
+    return `What is up ${name}?`;
+  } else if (name === 'Bryan') {
+    return 'Hey Bryan!';
+  } else {
+    return `Cool name, ${name}`
+  }
+}
 
+let nameGreeting = nameCheck('Bryan');
 
 ////////////////// PROBLEM 11 ////////////////////
 /*
